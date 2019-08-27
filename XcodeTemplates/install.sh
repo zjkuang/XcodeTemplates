@@ -1,9 +1,9 @@
 #!/bin/bash
-if [ ! -d "~/Library/Developer/Xcode/Templates" ]
+if [ ! -d ~/Library/Developer/Xcode/Templates ]
 then
   mkdir ~/Library/Developer/Xcode/Templates
 fi
-if [ ! -d "~/Library/Developer/Xcode/Templates/Custom" ]
+if [ ! -d ~/Library/Developer/Xcode/Templates/Custom ]
 then
   mkdir ~/Library/Developer/Xcode/Templates/Custom
 fi
