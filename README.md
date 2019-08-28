@@ -10,7 +10,8 @@ When creating a custom view, we have to create from two system templates:
   - View
     (Under "User Interface".
     This will create the .xib)
-Then we need to hook them up manually with many step which can be error-prone
+Then we need to hook them up manually with many step which can be error-prone.
+
 With the template in this repository, we can get the whole combo with a Command-N.
 
 To arrange the auto-layout constraints for UIScrollView is also a little tricky. We need some
