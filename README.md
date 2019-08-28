@@ -68,3 +68,5 @@ or comments or complaints please let us know.
 Quite similar to the usage of CustomViewSwift (or CustomViewObjC).
 Make sure the subviews for the autoLayoutScrollView shall be added under virtualContentView.
 </pre>
+# Acknowledgement
+These templates are inspired by [How to create a custom Xcode template for coordinators](https://www.hackingwithswift.com/articles/158/how-to-create-a-custom-xcode-template-for-coordinators)
