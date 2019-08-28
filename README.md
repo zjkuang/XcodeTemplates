@@ -30,7 +30,10 @@ or comments or complaints please let us know.
     In Terminal, type
     "git clone git@github.com:zjkuang/XcodeTemplates /path/to/local/repository/XcodeTemplates"
 (2) Install the templates
-    In Terminal, type "/path/to/your/local/repositories/XcodeTemplates/XcodeTemplates/install.sh"
+    In Terminal, type
+    "/path/to/local/repository/XcodeTemplates/XcodeTemplates/install.sh"
+    (No mystery here at all. It simply copies the templates to the place where Xcode can be
+    aware of.)
 </pre>
 # How to use
 * CustomViewSwift (and CustomViewObjC for Objective-C)
