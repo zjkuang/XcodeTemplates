@@ -10,16 +10,16 @@ When creating a custom view, we have to create from two system templates:
   - View
     (Under "User Interface".
     This will create the .xib)
-Then we need to hook them up manually with many step which can be error-prone.
+Then we need to hook them up manually with many steps which can be error-prone.
 
-With the template in this repository, we can get the whole combo with a Command-N.
+With the template in this repository, we can get the whole combo with a ⌘-N.
 
 To arrange the auto-layout constraints for UIScrollView is also a little tricky. We need some
 pre-process explained by
 </pre>
 [How to configure a UIScrollView with Auto Layout in Interface Builder](https://medium.com/@pradeep_chauhan/how-to-configure-a-uiscrollview-with-auto-layout-in-interface-builder-218dcb4022d7)
 <pre>
-And now again, with a Command-N, we can enjoy the ready-to-go AutoLayoutScrollView provided by
+And now again, with a ⌘-N, we can enjoy the ready-to-go AutoLayoutScrollView provided by
 the template in this repository.
 
 And this is not the end of story. We will keep adding useful templates here. If any good ideas
@@ -39,7 +39,7 @@ or comments or complaints please let us know.
 # How to use
 * CustomViewSwift (and CustomViewObjC for Objective-C)
 <pre>
-  (1) In Xcode's main menu, File/New/File (or Command-N) to add new file(s)
+  (1) In Xcode's main menu, File/New/File (or ⌘-N) to add new file(s)
   (2) In the popup window, select iOS and scroll down to find the new added templates
 </pre>
 ![](https://github.com/zjkuang/XcodeTemplates/blob/master/CustomTemplates.png)
