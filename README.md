@@ -1,29 +1,11 @@
 # XcodeTemplates
 Custom templates for Xcode
 <pre>
-Why we need them?
-
-When creating a custom view, we have to create from two system templates:
-  - UIView
-    (Under "Source" and choose "Cocoa Touch Class" and we can't create XIB file here.
-    This will create the .swift or .h + .m)
-  - View
-    (Under "User Interface".
-    This will create the .xib)
-Then we need to hook them up manually with many steps which can be error-prone.
-
-With the template in this repository, we can get the whole combo with a ⌘-N.
-
-To arrange the auto-layout constraints for UIScrollView is also a little tricky. We need some
-pre-process explained by
-</pre>
-[How to configure a UIScrollView with Auto Layout in Interface Builder](https://medium.com/@pradeep_chauhan/how-to-configure-a-uiscrollview-with-auto-layout-in-interface-builder-218dcb4022d7)
-<pre>
-And now again, with a ⌘-N, we can enjoy the ready-to-go AutoLayoutScrollView provided by
-the template in this repository.
-
-And this is not the end of story. We will keep adding useful templates here. If any good ideas
-or comments or complaints please let us know.
+This custom template pack includes
+ - Custom UIView+XIB, in both Swift and Objective C
+ - Custom UIScrollView+XIB, in both Swift and Objective C
+ - Custom SwiftUI View+ViewModel in SwiftUI
+ - Generic Navigation List in SwiftUI
 </pre>
 # How to install
 <pre>
@@ -36,8 +18,21 @@ or comments or complaints please let us know.
     (No mystery here at all. It simply copies the templates to the place where Xcode can be
     aware of.)
 </pre>
-# How to use
-* CustomViewSwift (and CustomViewObjC for Objective-C)
+# CustomViewSwift (and CustomViewObjC for Objective-C)
+* Background
+<pre>
+When creating a custom view, we have to create from two system templates:
+  - UIView
+    (Under "Source" and choose "Cocoa Touch Class" and we can't create XIB file here.
+    This will create the .swift or .h + .m)
+  - View
+    (Under "User Interface".
+    This will create the .xib)
+Then we need to hook them up manually with many steps which can be error-prone.
+
+With the template in this repository, we can get the whole combo with a ⌘-N.
+</pre>
+* How To Use
 <pre>
   (1) In Xcode's main menu, File/New/File (or ⌘-N) to add new file(s)
   (2) In the popup window, select iOS and scroll down to find the new added templates
@@ -64,10 +59,36 @@ or comments or complaints please let us know.
   (10) Add layout constraints for myCustomView in its superview
   (11) Control-drag the myCustomView and drop it to where you need the @IBOutlet
 </pre>
-* AutoLayoutScrollViewSwift (and AutoLayoutScrollViewObjC for Objective-C)
+# AutoLayoutScrollViewSwift (and AutoLayoutScrollViewObjC for Objective-C)
+* Background
+<pre>
+To arrange the auto-layout constraints for UIScrollView is also a little tricky. We need some
+pre-process explained by
+</pre>
+[How to configure a UIScrollView with Auto Layout in Interface Builder](https://medium.com/@pradeep_chauhan/how-to-configure-a-uiscrollview-with-auto-layout-in-interface-builder-218dcb4022d7)
+<pre>
+And now again, with a ⌘-N, we can enjoy the ready-to-go AutoLayoutScrollView provided by
+the template in this repository.
+</pre>
+* How To Use
 <pre>
 Quite similar to the usage of CustomViewSwift (or CustomViewObjC).
 Make sure the subviews for the autoLayoutScrollView shall be added under virtualContentView.
+</pre>
+# Generic Navigation List
+* Background
+<pre>
+Creating a Settings-like list view in SwiftUI also demands a lot of tricks.
+The template in this repo helps generate a generic list view+viewModel.
+Starting from this sample can make your job much easier.
+</pre>
+* How To Use
+
+![](https://github.com/zjkuang/XcodeTemplates/blob/master/GenericNavigationListTemplateDemo.gif)
+<pre>
+Note:
+In your project, the contents generated in xxxSharing.swift and xxxUISharing.swift shall be
+moved to a common place to be shared globally in the app.
 </pre>
 # Acknowledgement
 These templates are inspired by [How to create a custom Xcode template for coordinators](https://www.hackingwithswift.com/articles/158/how-to-create-a-custom-xcode-template-for-coordinators)
