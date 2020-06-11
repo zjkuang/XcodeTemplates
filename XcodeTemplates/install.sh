@@ -5,8 +5,24 @@ then
   mkdir ~/Library/Developer/Xcode/Templates
 fi
 
-if [ ! -d ~/Library/Developer/Xcode/Templates/Custom ]
+if [ ! -d ~/Library/Developer/Xcode/Templates/File\ Templates ]
 then
-  mkdir ~/Library/Developer/Xcode/Templates/Custom
+  mkdir ~/Library/Developer/Xcode/Templates/File\ Templates
 fi
-cp -R -p Custom/* ~/Library/Developer/Xcode/Templates/Custom
+
+if [ ! -d ~/Library/Developer/Xcode/Templates/File\ Templates/JKCS ]
+then
+  mkdir ~/Library/Developer/Xcode/Templates/File\ Templates/JKCS
+fi
+
+if [ ! -d ~/Library/Developer/Xcode/Templates/Project\ Templates ]
+then
+  mkdir ~/Library/Developer/Xcode/Templates/Project\ Templates
+fi
+
+if [ ! -d ~/Library/Developer/Xcode/Templates/Project\ Templates/JKCS ]
+then
+  mkdir ~/Library/Developer/Xcode/Templates/Project\ Templates/JKCS
+fi
+
+cp -R -p File\ Templates/JKCS/* ~/Library/Developer/Xcode/Templates/File\ Templates/JKCS
