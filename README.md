@@ -6,6 +6,8 @@ This custom template pack includes
  - Custom UIScrollView+XIB, in both Swift and Objective C
  - Custom SwiftUI View+ViewModel in SwiftUI
  - Generic Navigation List in SwiftUI
+ - SwiftUIVVM
+ - SwiftVVM
 </pre>
 # How to install
 <pre>
@@ -18,6 +20,30 @@ This custom template pack includes
     (No mystery here at all. It simply copies the templates to the place where Xcode can be
     aware of.)
 </pre>
+# Generic Navigation List
+* Background
+<pre>
+Creating a Settings-like list view in SwiftUI also demands a lot of tricks.
+The template in this repo helps generate a generic list view+viewModel.
+Starting from this sample can make your job much easier.
+</pre>
+* How To Use
+
+![](https://github.com/zjkuang/XcodeTemplates/blob/master/GenericNavigationListTemplateDemo.gif)
+<pre>
+Note:
+In your project, the contents generated in xxxSharing.swift and xxxUISharing.swift shall be
+moved to a common place to be shared globally in the app.
+</pre>
+# SwiftVVM
+* Background
+<pre>
+When applying MVVM in your project, keep it consistent in style among all the View/ViewModel. This template provides a pack of ViewController/XIB/ViewModel, with KVO data binding inside, as a starting point for your new created views.
+</pre>
+* How To Use
+New a file, (or by shortcut ⌘+N), scroll down to JKCS section, choose "SwiftVVM".
+
+![](https://github.com/zjkuang/XcodeTemplates/blob/master/SwiftVVM.png)
 # CustomViewSwift (and CustomViewObjC for Objective-C)
 * Background
 <pre>
@@ -74,21 +100,6 @@ the template in this repository.
 <pre>
 Quite similar to the usage of CustomViewSwift (or CustomViewObjC).
 Make sure the subviews for the autoLayoutScrollView shall be added under virtualContentView.
-</pre>
-# Generic Navigation List
-* Background
-<pre>
-Creating a Settings-like list view in SwiftUI also demands a lot of tricks.
-The template in this repo helps generate a generic list view+viewModel.
-Starting from this sample can make your job much easier.
-</pre>
-* How To Use
-
-![](https://github.com/zjkuang/XcodeTemplates/blob/master/GenericNavigationListTemplateDemo.gif)
-<pre>
-Note:
-In your project, the contents generated in xxxSharing.swift and xxxUISharing.swift shall be
-moved to a common place to be shared globally in the app.
 </pre>
 # Acknowledgement
 These templates are inspired by [How to create a custom Xcode template for coordinators](https://www.hackingwithswift.com/articles/158/how-to-create-a-custom-xcode-template-for-coordinators)
